@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #EF767A;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addExpenseController">
+   <children>
+      <ImageView fitHeight="70.0" fitWidth="79.0" layoutX="-16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bills.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="57.0" layoutY="6.0" prefHeight="42.0" prefWidth="91.0" text="Bills" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutY="101.0" prefHeight="42.0" prefWidth="154.0" style="-fx-background-color: white; -fx-opacity: 0.7;" text="50$ left from 100$" textFill="#ef767a">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="133.0" layoutY="315.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="44.0" prefWidth="134.0" style="-fx-background-color: white; -fx-opacity: 0.7;" styleClass="menu" text="Add Expense" textFill="#ef767a">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="133.0" layoutY="440.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="2.0" prefWidth="134.0" style="-fx-background-color: white; -fx-opacity: 0.7;" styleClass="menu" text="Edit Budget" textFill="#ef767a">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Button>
+      <TextField layoutX="124.0" layoutY="187.0" prefHeight="42.0" prefWidth="202.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="2.0" layoutY="201.0" prefHeight="42.0" prefWidth="115.0" text="Expense Name" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="126.0" layoutY="236.0" prefHeight="48.0" prefWidth="91.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="2.0" layoutY="244.0" prefHeight="48.0" prefWidth="128.0" text="Expense Value" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="225.0" layoutY="244.0" prefHeight="48.0" prefWidth="128.0" text="\$" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="148.0" layoutY="374.0" prefHeight="48.0" prefWidth="91.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: white;">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="2.0" layoutY="382.0" prefHeight="48.0" prefWidth="134.0" text="New Budget Value" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="382.0" prefHeight="48.0" prefWidth="128.0" text="\$" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
