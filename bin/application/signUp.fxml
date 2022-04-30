@@ -22,7 +22,7 @@
             <Font name="Agency FB" size="24.0" />
          </font>
       </PasswordField>
-      <Button fx:id="login" layoutX="457.0" layoutY="435.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #F25757; -fx-background-radius: 25px; -fx-opacity: 0.7;" text="Sign Up" textFill="WHITE">
+      <Button fx:id="login" layoutX="457.0" layoutY="435.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;" text="Sign Up" textFill="WHITE">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
@@ -73,5 +73,10 @@
             <Font name="Agency FB" size="15.0" />
          </font>
       </Label>
+      <Button fx:id="back" layoutY="454.0" mnemonicParsing="false" onAction="#sign" prefHeight="42.0" prefWidth="84.0" style="-fx-background-color: #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
