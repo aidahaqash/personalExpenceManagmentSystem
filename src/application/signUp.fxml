@@ -12,27 +12,27 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #E4FCEC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.signUpController">
    <children>
-      <TextField layoutX="391.0" layoutY="160.0" prefHeight="50.0" prefWidth="250.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #548939;">
+      <TextField fx:id="email" layoutX="391.0" layoutY="160.0" prefHeight="50.0" prefWidth="250.0" promptText="Email" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #548939;">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="391.0" layoutY="250.0" prefHeight="50.0" prefWidth="250.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #548939; -fx-border-width: 0px 0px 2px 0px;">
+      <PasswordField fx:id="password" layoutX="391.0" layoutY="250.0" prefHeight="50.0" prefWidth="250.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #548939; -fx-border-width: 0px 0px 2px 0px;">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </PasswordField>
-      <Button fx:id="login" layoutX="457.0" layoutY="435.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;" text="Sign Up" textFill="WHITE">
+      <Button fx:id="signUp" layoutX="457.0" layoutY="435.0" mnemonicParsing="false" onAction="#getData" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;" text="Sign Up" textFill="WHITE">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </Button>
-      <TextField layoutX="391.0" layoutY="77.0" prefHeight="50.0" prefWidth="250.0" promptText="Full Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #548939;">
+      <TextField fx:id="fullName" layoutX="391.0" layoutY="77.0" prefHeight="50.0" prefWidth="250.0" promptText="Full Name" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #548939;">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="391.0" layoutY="330.0" prefHeight="50.0" prefWidth="250.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: #548939; -fx-border-width: 0px 0px 2px 0px;">
+      <PasswordField fx:id="confirmP" layoutX="391.0" layoutY="330.0" prefHeight="50.0" prefWidth="250.0" promptText="Confirm Password" style="-fx-background-color: transparent; -fx-border-color: #548939; -fx-border-width: 0px 0px 2px 0px;">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
@@ -73,10 +73,30 @@
             <Font name="Agency FB" size="15.0" />
          </font>
       </Label>
-      <Button fx:id="back" layoutY="454.0" mnemonicParsing="false" onAction="#sign" prefHeight="42.0" prefWidth="84.0" style="-fx-background-color: #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;" text="Back" textFill="WHITE">
+      <Button fx:id="back" layoutY="454.0" mnemonicParsing="false" onAction="#back" prefHeight="42.0" prefWidth="84.0" style="-fx-background-color: #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;" text="Back" textFill="WHITE">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </Button>
+      <Label fx:id="namL" layoutX="391.0" layoutY="135.0" prefHeight="18.0" prefWidth="250.0" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pasL" layoutX="391.0" layoutY="304.0" prefHeight="18.0" prefWidth="250.0" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="emL" layoutX="391.0" layoutY="215.0" prefHeight="18.0" prefWidth="250.0" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="conL" layoutX="391.0" layoutY="383.0" prefHeight="18.0" prefWidth="250.0" textFill="RED">
+         <font>
+            <Font name="Agency FB" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

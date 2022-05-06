@@ -28,7 +28,16 @@ public class logOrRegController implements Initializable{
 	
 	 private static final String IDLE_BUTTON_STYLE = "-fx-background-color:  #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;";
 	    private static final String HOVERED_BUTTON_STYLE = "-fx-background-color: pink; -fx-background-radius: 25px; -fx-opacity: 0.7;";
-    @FXML
+	   @FXML
+	    void back(ActionEvent event) throws IOException {
+	    	  Parent scene2parent=FXMLLoader.load(getClass().getResource("getStarted.fxml"));
+		        Scene scene2=new Scene(scene2parent);
+		        Stage window =(Stage)((Node)event.getSource()).getScene().getWindow();
+		        window.setScene(scene2);
+		        window.show();
+
+	    }
+	    @FXML
     public void log (ActionEvent event ) throws IOException{
         Parent scene3parent=FXMLLoader.load(getClass().getResource("login.fxml"));
         Scene scene3=new Scene(scene3parent);

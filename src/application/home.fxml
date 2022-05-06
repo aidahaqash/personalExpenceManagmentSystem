@@ -141,5 +141,10 @@
             <Font name="Agency FB" size="36.0" />
          </font>
       </Label>
+      <Label fx:id="username" layoutX="570.0" prefHeight="46.0" prefWidth="130.0" textFill="#ed254e">
+         <font>
+            <Font name="Agency FB" size="36.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
