@@ -126,7 +126,7 @@
             <Font name="Agency FB" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="350.0" layoutY="425.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="     Add Category" textFill="WHITE">
+      <Button layoutX="350.0" layoutY="425.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="162.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="     Add Category" textFill="WHITE" onAction="#start1">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
@@ -137,11 +137,6 @@
          </image>
       </ImageView>
       <Label layoutX="343.0" layoutY="13.0" prefHeight="55.0" prefWidth="137.0" text="Dashboard" textFill="#548939">
-         <font>
-            <Font name="Agency FB" size="36.0" />
-         </font>
-      </Label>
-      <Label fx:id="username" layoutX="570.0" prefHeight="46.0" prefWidth="130.0" textFill="#ed254e">
          <font>
             <Font name="Agency FB" size="36.0" />
          </font>

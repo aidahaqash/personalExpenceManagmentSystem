@@ -50,7 +50,7 @@ public class loginController  implements Initializable {
 	    
     private static final String IDLE_BUTTON_STYLE = "-fx-background-color:  #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;";
     private static final String HOVERED_BUTTON_STYLE = "-fx-background-color: pink; -fx-background-radius: 25px; -fx-opacity: 0.7;";
-   
+  public int userid=0;
     
     @FXML
     void back(ActionEvent event) throws IOException {
@@ -68,11 +68,22 @@ public class loginController  implements Initializable {
     		 emLa.setText(null);
     		  pasLa.setText(null);
       if(testInputs()==true) {
-	  Parent scene2parent=FXMLLoader.load(getClass().getResource("home.fxml"));
-      Scene scene2=new Scene(scene2parent);
-      Stage window =(Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-      window.setScene(scene2);
-      window.show();	 
+    	  Node node = (Node) actionEvent.getSource();
+  		Stage stage = (Stage) node.getScene().getWindow();
+  	     stage.close();
+  	     try 
+  	     {
+  	    	       Parent scene2parent=FXMLLoader.load(getClass().getResource("home.fxml"));
+  	       	       stage.setUserData(userid);
+  	       	       Scene scene = new Scene(scene2parent);
+  	               stage.setScene(scene);
+  	       	       stage.show();
+  	     } 
+  	     catch (IOException e)
+  	     {
+  	    	    System.err.println(String.format("Error: %s", e.getMessage()));
+  	     }
+      
 };
     		 
     }
@@ -148,10 +159,12 @@ return false;
       	 Connection con=DriverManager.getConnection(url,user1,password);
       	 Statement stmt=con.createStatement();
       	String query = "Select * from sign Where email='" + email + "' and password='"+pass+"'";
+
       	 ResultSet rs =stmt.executeQuery(query);
-      	 
+
       	 if(rs.next()) {
       		 f=true;
+      		 userid=rs.getInt(1);
       		 
        	
        	 }
