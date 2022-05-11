@@ -48,7 +48,15 @@ public class addCategoryController
 	    @FXML
 	    private TextField LOGO_text ;
 	    
-	    
+	    @FXML
+	    void back(ActionEvent event) throws IOException {
+	    	  Parent scene2parent=FXMLLoader.load(getClass().getResource("home.fxml"));
+		        Scene scene2=new Scene(scene2parent);
+		        Stage window =(Stage)((Node)event.getSource()).getScene().getWindow();
+		        window.setScene(scene2);
+		        window.show();
+
+	    }	    
 	   
  @FXML
  public void addCAT (ActionEvent event ) throws IOException
@@ -88,7 +96,7 @@ public class addCategoryController
 	  }
 	  else
 	  {
-     String query = "INSERT INTO expensescategories(categoryID, userID, categoryName , categoryColor,categoryLogo,categoryBudget) VALUES(?,?,?,?,?,?)";
+     String query = "INSERT INTO expensescategories(categoryID, userID, categoryName , categoryColor,categoryLogo,categoryBudget,remainbudget) VALUES(?,?,?,?,?,?,?)";
     
      try (Connection con = DriverManager.getConnection(url, user1, password);
           PreparedStatement pst = con.prepareStatement(query)) 
@@ -100,7 +108,7 @@ public class addCategoryController
          pst.setString(4, COLOR_text.getText());
          pst.setString(5, LOGO_text.getText());
          pst.setInt(6,Integer.parseInt(Budget_text.getText()));
-
+         pst.setInt(7, Integer.parseInt(Budget_text.getText()));
         
          pst.executeUpdate();
          

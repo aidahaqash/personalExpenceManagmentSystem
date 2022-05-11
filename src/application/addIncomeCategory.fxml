@@ -8,19 +8,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="400.0" style="-fx-background-color: #E4FCEC;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addCategoryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="319.0" prefWidth="400.0" style="-fx-background-color: #E4FCEC;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addIncomeCategoryController">
    <children>
       <ImageView fitHeight="53.0" fitWidth="91.0" layoutX="-16.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/logo.png" />
          </image>
       </ImageView>
-      <Label layoutX="56.0" layoutY="3.0" prefHeight="42.0" prefWidth="91.0" text="Expensify" textFill="#548939">
+      <Label fx:id="namew" layoutX="127.0" layoutY="212.0" prefHeight="42.0" prefWidth="214.0" textFill="#548939">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="127.0" layoutY="165.0" prefHeight="26.0" prefWidth="214.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #548939;">
+      <TextField fx:id="catnam" layoutX="127.0" layoutY="165.0" prefHeight="26.0" prefWidth="214.0" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #548939;">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
@@ -40,7 +40,7 @@
             <Image url="@images/add.png" />
          </image>
       </ImageView>
-      <Button layoutX="150.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="49.0" prefWidth="99.0" style="-fx-background-color: #ED254E; -fx-opacity: 0.7;" styleClass="menu" text="Add " textFill="WHITE">
+      <Button fx:id="addcat" layoutX="150.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#addcate" prefHeight="49.0" prefWidth="99.0" style="-fx-background-color: #ED254E; -fx-opacity: 0.7;" styleClass="menu" text="Add " textFill="WHITE">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>

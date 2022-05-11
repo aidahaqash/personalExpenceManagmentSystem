@@ -50,7 +50,7 @@ public class loginController  implements Initializable {
 	    
     private static final String IDLE_BUTTON_STYLE = "-fx-background-color:  #ED254E; -fx-background-radius: 25px; -fx-opacity: 0.7;";
     private static final String HOVERED_BUTTON_STYLE = "-fx-background-color: pink; -fx-background-radius: 25px; -fx-opacity: 0.7;";
-  public int userid=0;
+  public static int id;
     
     @FXML
     void back(ActionEvent event) throws IOException {
@@ -72,9 +72,10 @@ public class loginController  implements Initializable {
   		Stage stage = (Stage) node.getScene().getWindow();
   	     stage.close();
   	     try 
-  	     {
+  	     {      
+
   	    	       Parent scene2parent=FXMLLoader.load(getClass().getResource("home.fxml"));
-  	       	       stage.setUserData(userid);
+  	       	       stage.setUserData(id);
   	       	       Scene scene = new Scene(scene2parent);
   	               stage.setScene(scene);
   	       	       stage.show();
@@ -159,12 +160,12 @@ return false;
       	 Connection con=DriverManager.getConnection(url,user1,password);
       	 Statement stmt=con.createStatement();
       	String query = "Select * from sign Where email='" + email + "' and password='"+pass+"'";
-
+  
       	 ResultSet rs =stmt.executeQuery(query);
 
       	 if(rs.next()) {
       		 f=true;
-      		 userid=rs.getInt(1);
+      		 this.id=rs.getInt(1);
       		 
        	
        	 }

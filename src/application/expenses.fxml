@@ -23,32 +23,27 @@
             <Font name="Agency FB" size="36.0" />
          </font>
       </Label>
-      <Button layoutY="92.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="       Dashboard" textFill="WHITE">
+      <Button fx:id="dashboard" layoutY="92.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#dash" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="       Dashboard" textFill="WHITE">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </Button>
-      <Button layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="      Incomes" textFill="WHITE">
+      <Button fx:id="incomes" layoutY="158.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#inc" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="      Incomes" textFill="WHITE">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </Button>
-      <Button layoutY="227.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="      Expenses" textFill="WHITE">
+      <Button fx:id="expenses" layoutY="227.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#exp" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="      Expenses" textFill="WHITE">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </Button>
-      <Button layoutY="297.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="      Reports" textFill="WHITE">
+      <Button fx:id="reports" layoutY="297.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#rep" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #548939; -fx-opacity: 0.7;" styleClass="menu" text="      Reports" textFill="WHITE">
          <font>
             <Font name="Agency FB" size="24.0" />
          </font>
       </Button>
       <Line endY="500.0" layoutX="150.0" stroke="#548739" />
-      <Button layoutY="450.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #ED254E; -fx-opacity: 0.7;" styleClass="menu" text="LOGOUT" textFill="WHITE">
-         <font>
-            <Font name="Agency FB" size="24.0" />
-         </font>
-      </Button>
       <ImageView fitHeight="34.0" fitWidth="28.0" layoutX="14.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/dash.png" />
